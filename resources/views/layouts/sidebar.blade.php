@@ -10,7 +10,7 @@
       </ul>
       @if(auth()->user()->roleId === 1 || auth()->user()->roleId === 4)
       <h6 class="sidebar-heading d-flex justify content between align-items-center px-3 mt-4 mb-1 text-muted"><span>Office Menu</span></h6>
-      <ul class="nav flex-column">  
+      <ul class="nav flex-column">
         <li class="nav-item">
           <a class="nav-link {{ Request::is('dashboard/pengajuan-barang*') ? 'active' : '' }}" href="/dashboard/pengajuan-barang">
             <span data-feather="clipboard" class="align-text-bottom"></span>
@@ -21,7 +21,7 @@
       @endIf
       @if(auth()->user()->roleId === 1 || auth()->user()->roleId === 2)
       <h6 class="sidebar-heading d-flex justify content between align-items-center px-3 mt-4 mb-1 text-muted"><span>Manager Menu</span></h6>
-      <ul class="nav flex-column">  
+      <ul class="nav flex-column">
         <li class="nav-item">
           <a class="nav-link {{ Request::is('dashboard/pengajuan-manager*') ? 'active' : '' }}" href="/dashboard/pengajuan-manager">
             <span data-feather="clipboard" class="align-text-bottom"></span>
@@ -38,7 +38,7 @@
       @endIf
       @if(auth()->user()->roleId === 1 || auth()->user()->roleId === 3)
       <h6 class="sidebar-heading d-flex justify content between align-items-center px-3 mt-4 mb-1 text-muted"><span>Finance Menu</span></h6>
-      <ul class="nav flex-column">  
+      <ul class="nav flex-column">
         <li class="nav-item">
           <a class="nav-link {{ Request::is('dashboard/pengajuan-finance*') ? 'active' : '' }}" href="/dashboard/pengajuan-finance">
             <span data-feather="clipboard" class="align-text-bottom"></span>
